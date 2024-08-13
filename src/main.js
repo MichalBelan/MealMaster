@@ -5,6 +5,8 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import * as filters from './filters'
 import i18n from './i18n';
+import 'boxicons/css/boxicons.min.css';
+
 
 const app = createApp(App);
 app.use(router).use(store).mount("#app");

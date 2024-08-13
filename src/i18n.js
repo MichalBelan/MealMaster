@@ -17,6 +17,7 @@ const messages = {
       area: "Area",
       tags: "Tags",
       measures: "Measures",
+      instructions: "Instructions",
       view: "View Original Source",
       mealList: "Meal list",
       mealsFor: "Meals for",
@@ -39,6 +40,7 @@ const messages = {
       area: "Oblasť",
       tags: "Poznámky",
       measures: "Miery",
+      instructions: "Postup",
       view: "Zobraziť originálny zdroj",
       mealList: "Zoznam jedál",
       mealsFor: "Jedlá pre",
@@ -51,7 +53,7 @@ const messages = {
 
 // Create i18n instance
 const i18n = createI18n({
-  locale: "sk", // Default locale
+  locale: "en", // Default locale
   messages,
 });
 

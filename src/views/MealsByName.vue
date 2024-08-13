@@ -1,26 +1,24 @@
 <template>
-  <div class="p-8 pb-0">
-    <h1 class="text-4xl font-bold mb-4 text-orange-500">{{ $t('message.searchMealsbyName') }}</h1>
+  <div class="p-8">
+    <h1 class="text-4xl font-bold mb-4 text-orange-600">{{ $t('message.searchMealsbyName') }}</h1>
+    <div class="px-8 pb-3">
+      <input
+        type="text"
+        v-model="keyword"
+        class="rounded border-2 border-gray-300 bg-white focus:ring-orange-500 focus:border-orange-500 w-full p-2"
+        :placeholder="$t('message.searchMealsbyName')"
+        @input="searchMeals"
+      />
+    </div>
+    <Meals :meals="meals" />
   </div>
-  <div class="px-8 pb-3">
-    <input
-      type="text"
-      v-model="keyword"
-      class="rounded border-2 bg-white border-gray-200 focus:ring-orange-500 focus:border-orange-500 w-full"
-      :placeholder="$t('message.searchMealsbyName')"
-      @change="searchMeals"
-    />
-  </div>
-
-  <Meals :meals="meals" />
 </template>
 
 <script setup>
-import { computed } from "@vue/reactivity";
-import { onMounted, ref } from "vue";
-import { useRoute } from "vue-router";
-import store from "../store";
-import Meals from '../components/Meals.vue'
+import { computed, onMounted, ref } from 'vue';
+import { useRoute } from 'vue-router';
+import store from '../store';
+import Meals from '../components/Meals.vue';
 
 const route = useRoute();
 const keyword = ref("");
@@ -35,9 +33,9 @@ function searchMeals() {
 }
 
 onMounted(() => {
-  keyword.value = route.params.name
+  keyword.value = route.params.name;
   if (keyword.value) {
-    searchMeals()
+    searchMeals();
   }
-})
+});
 </script>

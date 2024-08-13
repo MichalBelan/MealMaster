@@ -1,8 +1,10 @@
 <template>
-  <div class="p-8 pb-0 text-orange-500">
-    <h1 class="text-4xl font-bold mb-4">{{ $t('message.meals') }}</h1>
+  <div>
+    <div class="p-8 pb-0 text-gray-200">
+      <h1 class="text-4xl font-bold mb-4">{{ $t("message.meals") }} 🍽</h1>
+    </div>
+    <Meals :meals="meals" />
   </div>
-  <Meals :meals="meals" />
 </template>
 
 <script setup>
@@ -15,7 +17,7 @@ const meals = ref([]);
 onMounted(async () => {
   try {
     for (let i = 0; i < 10; i++) {
-      const response = await axiosClient.get('random.php');
+      const response = await axiosClient.get("random.php");
       if (response.data && response.data.meals && response.data.meals[0]) {
         meals.value.push(response.data.meals[0]);
       }
@@ -25,3 +27,7 @@ onMounted(async () => {
   }
 });
 </script>
+
+<style scoped>
+
+</style>
