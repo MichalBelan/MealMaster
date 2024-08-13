@@ -1,29 +1,44 @@
-# meals
+# MealMaster
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplikácia na vyhľadávanie a zobrazenie receptov s použitím Vue.js a Tailwind CSS.
+MealMaster ti pomôže objaviť a preskúmať množstvo receptov z celého sveta. S intuitívnym rozhraním a robustným vyhľadávacím systémom môžeš jednoducho vyhľadávať recepty podľa názvu, ingrediencií alebo písmena. Aplikácia ponúka detailné informácie o receptoch vrátane ingrediencií, prípravy a odkazov na ďalšie zdroje. Navyše, podporuje a umožňuje zmenu jazyka priamo v aplikácii, čo zaručuje prispôsobený zážitok pre každého používateľa
 
-## Recommended IDE Setup
+## Funkcie
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Vyhľadávanie receptov**: Vyhľadávaj recepty podľa názvu, ingrediencií alebo písmen.
+- **Zobrazenie detailov receptu**: Prezri si podrobnosti o recepte vrátane ingrediencií a inštrukcií.
+- **Prepinanie jazykov**: Prepnúť medzi jazykmi (napr. slovenčina a angličtina).
+- **Responsívny dizajn**: Optimalizované pre mobilné zariadenia a desktop.
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Inštalácia
 
-## Project Setup
+1. **Klonovanie repozitára:**
 
-```sh
-npm install
-```
+   ```bash
+   git clone https://github.com/MichalBelan/MealMaster.git
+   
+2. **Prejdi do priečinka aplikácie:**
+   cd meals
+   
+3. **Nainštaluj závislosti**
+   npm install
+   
+4. **Spusti vývojový server**
+   npm run dev
 
-### Compile and Hot-Reload for Development
+## Použitie
 
-```sh
-npm run dev
-```
+- **Vyhľadávanie**: Použi vyhľadávací panel na hlavnej stránke na vyhľadávanie receptov podľa názvu alebo ingrediencií.
+- **Prezeranie receptov**: Klikni na recepty na hlavnej stránke, aby si zobrazil podrobnosti o recepte.
+- **Prepnúť jazyk**: Použi tlačidlo pre prepnúť jazyk v hornej navigácii na zmenu jazyka.
 
-### Compile and Minify for Production
+## Technológie
 
-```sh
-npm run build
-```
+- **Vue.js**: JavaScript framework pre vytváranie interaktívnych užívateľských rozhraní.
+- **Tailwind CSS**: Utility-first CSS framework na rýchle a flexibilné štýlovanie.
+- **Axios**: HTTP klient na komunikáciu so serverom.
+- **Vue Router**: Router na navigáciu medzi stránkami aplikácie.
+- **Vuex**: State management pre správu stavu aplikácie.
+   
+   
